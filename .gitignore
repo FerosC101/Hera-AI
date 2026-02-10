@@ -1,0 +1,137 @@
+# HERA Monorepo .gitignore
+
+# ====================
+# General
+# ====================
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.tmp
+.env
+.env.local
+.env.*.local
+
+# ====================
+# Mobile (Flutter/Dart)
+# ====================
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/build/
+mobile/ios/Flutter/flutter_export_environment.sh
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/android/.gradle/
+mobile/android/app/debug/
+mobile/android/app/profile/
+mobile/android/app/release/
+mobile/android/captures/
+mobile/android/local.properties
+mobile/android/key.properties
+mobile/pubspec.lock
+
+# ====================
+# Web (Next.js/React)
+# ====================
+web/node_modules/
+web/.next/
+web/out/
+web/build/
+web/dist/
+web/.cache/
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+web/.pnpm-debug.log*
+web/.vercel
+web/.turbo
+web/package-lock.json
+web/yarn.lock
+web/pnpm-lock.yaml
+
+# ====================
+# AI Services (Python)
+# ====================
+ai-services/__pycache__/
+ai-services/*.py[cod]
+ai-services/*$py.class
+ai-services/.Python
+ai-services/venv/
+ai-services/env/
+ai-services/ENV/
+ai-services/.venv
+ai-services/pip-log.txt
+ai-services/pip-delete-this-directory.txt
+ai-services/.pytest_cache/
+ai-services/.coverage
+ai-services/htmlcov/
+ai-services/dist/
+ai-services/build/
+ai-services/*.egg-info/
+ai-services/.mypy_cache/
+ai-services/.dmypy.json
+ai-services/dmypy.json
+ai-services/.ruff_cache/
+
+# ML Models (large files)
+ai-services/models/*.h5
+ai-services/models/*.pkl
+ai-services/models/*.pth
+ai-services/models/*.onnx
+
+# ====================
+# Firebase
+# ====================
+firebase/node_modules/
+firebase/.firebase/
+firebase/firebase-debug.log
+firebase/firestore-debug.log
+firebase/ui-debug.log
+firebase/.runtimeconfig.json
+
+# Firebase credentials (IMPORTANT: Never commit!)
+firebase/*-firebase-adminsdk-*.json
+firebase/serviceAccountKey.json
+firebase/.firebaserc
+
+# ====================
+# Documentation
+# ====================
+docs/node_modules/
+docs/.docusaurus/
+docs/build/
+
+# ====================
+# OS-specific
+# ====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ====================
+# Sensitive Information
+# ====================
+*.key
+*.pem
+*.p12
+secrets/
+credentials/
+.secrets

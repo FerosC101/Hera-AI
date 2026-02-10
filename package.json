@@ -1,0 +1,33 @@
+{
+  "name": "hera-ai-monorepo",
+  "version": "1.0.0",
+  "description": "HERA - Maternal Health AI Platform Monorepo",
+  "private": true,
+  "workspaces": [
+    "web",
+    "firebase"
+  ],
+  "scripts": {
+    "web:dev": "cd web && npm run dev",
+    "web:build": "cd web && npm run build",
+    "web:test": "cd web && npm test",
+    "firebase:deploy": "cd firebase && firebase deploy",
+    "ai:dev": "cd ai-services && python -m uvicorn main:app --reload",
+    "ai:test": "cd ai-services && pytest",
+    "docs:dev": "cd docs && npm run start",
+    "docs:build": "cd docs && npm run build"
+  },
+  "keywords": [
+    "maternal-health",
+    "ai",
+    "healthcare",
+    "monorepo",
+    "hackathon"
+  ],
+  "author": "HERA Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FerosC101/Hera-AI"
+  }
+}
