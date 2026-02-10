@@ -109,7 +109,6 @@ docs/build/
 # OS-specific
 # ====================
 # macOS
-.DS_Store
 .AppleDouble
 .LSOverride
 ._*

@@ -12,8 +12,8 @@
     "web:build": "cd web && npm run build",
     "web:test": "cd web && npm test",
     "firebase:deploy": "cd firebase && firebase deploy",
-    "ai:dev": "cd ai-services && python -m uvicorn main:app --reload",
-    "ai:test": "cd ai-services && pytest",
+    "ai:dev": "echo 'AI services not yet implemented. Navigate to ai-services/ and run: python -m uvicorn main:app --reload'",
+    "ai:test": "echo 'AI services tests not yet implemented. Navigate to ai-services/ and run: pytest'",
     "docs:dev": "cd docs && npm run start",
     "docs:build": "cd docs && npm run build"
   },
